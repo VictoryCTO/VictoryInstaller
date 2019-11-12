@@ -1,0 +1,26 @@
+{
+    "name": "VictoryCTO/VictoryInstaller",
+    "description": "Victory Centric Laravel application installer.",
+    "keywords": ["laravel"],
+    "authors": [
+        {
+            "name": "John Cunningham",
+            "email": "jwc@victorycto.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Installer\\Console\\": "src/"
+        }
+    },
+    "require": {
+        "ext-zip": "*",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/console": "~3.0|~4.0",
+        "symfony/filesystem": "~3.0|~4.0",
+        "symfony/process": "~3.0|~4.0"
+    },
+    "bin": [
+        "victory-laravel"
+    ]
+}
