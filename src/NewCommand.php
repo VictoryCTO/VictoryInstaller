@@ -18,12 +18,12 @@ class NewCommand extends Command
 {
 
     protected $lts = '602';
-    protected $lts_name = 'victory-laravel-6.0.2';
+    protected $lts_name = 'laravel-6.0.2';
     protected $packages = [
-        'jeroen-g/victory-laravel-packager',
-        'cviebrock/victory-laravel-elasticsearch',
-        'aws/aws-sdk-php-victory-laravel',
-        'victory-laravel/homestead',
+        'jeroen-g/laravel-packager',
+        'cviebrock/laravel-elasticsearch',
+        'aws/aws-sdk-php-laravel',
+        'laravel/homestead',
     ];
 
     /**
@@ -146,13 +146,13 @@ class NewCommand extends Command
     {
         switch ($version) {
             case 'develop':
-                $filename = 'http://cabinet.victory-laravel.com/latest-develop.zip';
+                $filename = 'http://cabinet.laravel.com/latest-develop.zip';
                 break;
             case 'master':
-                $filename = 'http://cabinet.victory-laravel.com/latest.zip';
+                $filename = 'http://cabinet.laravel.com/latest.zip';
                 break;
             default:
-                $filename = "https://github.com/victory-laravel/victory-laravel/archive/v6.0.2.zip";
+                $filename = "https://github.com/laravel/laravel/archive/v6.0.2.zip";
                 break;
         }
 
