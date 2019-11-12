@@ -18,12 +18,12 @@ class NewCommand extends Command
 {
 
     protected $lts = '602';
-    protected $lts_name = 'laravel-6.0.2';
+    protected $lts_name = 'victory-laravel-6.0.2';
     protected $packages = [
-        'jeroen-g/laravel-packager',
-        'cviebrock/laravel-elasticsearch',
-        'aws/aws-sdk-php-laravel',
-        'laravel/homestead',
+        'jeroen-g/victory-laravel-packager',
+        'cviebrock/victory-laravel-elasticsearch',
+        'aws/aws-sdk-php-victory-laravel',
+        'victory-laravel/homestead',
     ];
 
     /**
@@ -146,13 +146,13 @@ class NewCommand extends Command
     {
         switch ($version) {
             case 'develop':
-                $filename = 'http://cabinet.laravel.com/latest-develop.zip';
+                $filename = 'http://cabinet.victory-laravel.com/latest-develop.zip';
                 break;
             case 'master':
-                $filename = 'http://cabinet.laravel.com/latest.zip';
+                $filename = 'http://cabinet.victory-laravel.com/latest.zip';
                 break;
             default:
-                $filename = "https://github.com/laravel/laravel/archive/v6.0.2.zip";
+                $filename = "https://github.com/victory-laravel/victory-laravel/archive/v6.0.2.zip";
                 break;
         }
 
@@ -177,7 +177,7 @@ class NewCommand extends Command
         $response = $archive->open($zipFile, ZipArchive::CHECKCONS);
 
         if ($response === ZipArchive::ER_NOZIP) {
-            throw new RuntimeException('The zip file could not download. Verify that you are able to access: http://cabinet.laravel.com/latest.zip');
+            throw new RuntimeException('The zip file could not download. Verify that you are able to access: http://cabinet.victory-laravel.com/latest.zip');
         }
 
         $archive->extractTo($directory);
