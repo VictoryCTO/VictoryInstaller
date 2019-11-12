@@ -2,6 +2,7 @@
     "name": "VictoryCTO/VictoryInstaller",
     "description": "Victory Centric Laravel application installer.",
     "keywords": ["laravel"],
+    "version": "1.0.0",
     "authors": [
         {
             "name": "John Cunningham",
